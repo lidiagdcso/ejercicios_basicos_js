@@ -20,6 +20,8 @@ const foodSchedule = [
 for (i = 0; i < foodSchedule.length; i++) {
   if (foodSchedule[i].isVegan == false) {
     foodSchedule.splice(i, 1)
+
+    // sin terminar
   }
 }
 
