@@ -12,3 +12,7 @@ const placesToTravel = [
   'Filipinas',
   'Madagascar'
 ]
+
+for (const element of placesToTravel) {
+  console.log(element)
+}
