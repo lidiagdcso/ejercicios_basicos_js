@@ -16,3 +16,11 @@ const foodSchedule = [
   { name: 'Rice', isVegan: true },
   { name: 'Pasta', isVegan: true }
 ]
+
+for (i = 0; i < foodSchedule.length; i++) {
+  if (foodSchedule[i].isVegan == false) {
+    foodSchedule.splice(i, 1)
+  }
+}
+
+console.log(foodSchedule)

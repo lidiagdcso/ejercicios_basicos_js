@@ -18,3 +18,23 @@ const movies = [
   { name: 'Amélie', durationInMinutes: 110 },
   { name: 'Eternal Sunshine of the Spotless Mind', durationInMinutes: 108 }
 ]
+
+let smallMovies = []
+
+let mediumMovies = []
+
+let bigMovies = []
+
+for (const movie of movies) {
+  if (movie.durationInMinutes < 100) {
+    smallMovies.push(movie)
+  } else if (movie.durationInMinutes > 200) {
+    bigMovies.push(movie)
+  } else {
+    mediumMovies.push(movie)
+  }
+}
+
+console.log(smallMovies)
+console.log(mediumMovies)
+console.log(bigMovies)
