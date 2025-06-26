@@ -16,12 +16,15 @@ const foodSchedule = [
   { name: 'Rice', isVegan: true },
   { name: 'Pasta', isVegan: true }
 ]
+let fruitNum = 0
 
 for (i = 0; i < foodSchedule.length; i++) {
-  if (foodSchedule[i].isVegan == false) {
-    foodSchedule.splice(i, 1)
-
-    // sin terminar
+  if (foodSchedule[i].isVegan == false && fruitNum < fruits.length) {
+    foodSchedule[i] = {
+      name: fruits[fruitNum],
+      isVegan: true
+    }
+    fruitNum++
   }
 }
 

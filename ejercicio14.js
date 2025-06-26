@@ -18,5 +18,16 @@ const words = [
   'code'
 ]
 function repeatCounter(list) {
-  // Completar
+  let count = {}
+  for (i = 0; i < list.length; i++) {
+    let word = list[i]
+
+    if (count[word]) {
+      count[word]++
+    } else {
+      count[word] = 1
+    }
+  }
 }
+
+console.log(repeatCounter(words))
